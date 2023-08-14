@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    color: #999999;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+p {
+    color: #ffffffd5;
+    margin: 0.5rem 0;
+}
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/23c72870-12c8-4682-9f55-337a083ccfa7/40f04e8f-c448-4789-8b1a-35d39388ae62/ID-en-20211129-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 120px 100px 250px #000000, inset -120px -100px 150px #000000;
+}
+
+.showcase-top-section {
+    z-index: 2;
+    height: 90px;
+    position: relative;
+}
+
+.showcase-top-section img {
+    position: absolute;
+    top: 50%;
+    width: 170px;
+    transform: translate(10%, -50%);
+}
+
+.showcase-top-section a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60%, -100%);
+}
+
+.middle-content {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.middle-content h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 74.5px;
+}
+
+.middle-content p {
+    font-size: 18;
+    font-weight: 200;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.middle-content input {
+    Position: absolute;
+    margin-right: 11%;
+    bottom: -6vh;
+    width: 454px;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    background-color: #c4c4c4c4;
+}
+
+.btn-login {
+    border-radius: 10px;
+    display: inline-block;
+    background: #404040;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 1 rgba(0, 0, 0, 0.45);
+}
+
+.btn-get-started {
+    position: absolute;
+    bottom: -6vh;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    height: 3rem;
+    width: 10rem;
+    display: inline-block;
+    background: #404040;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    margin-left: 28%;
+    outline: none;
+    box-shadow: 0 1px 1 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+}
